@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media SOP: Create & Post</title>
+    <title>Social Media SOP: Workflow</title>
     <style>
         * {
             margin: 0;
@@ -66,14 +66,6 @@
             margin-bottom: 40px;
         }
 
-        .subsection-title {
-            color: #888888;
-            font-size: 9pt;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-            margin: 20px 0 12px 0;
-        }
-
         p {
             margin-bottom: 12px;
             font-size: 11pt;
@@ -112,22 +104,29 @@
             background-color: #242424;
         }
 
-        .step-box {
-            background-color: #2a2a2a;
-            color: #ffffff;
-            padding: 12px;
-            margin: 12px 0 8px 0;
-            font-weight: bold;
+        .role-card {
             border: 1px solid #333333;
+            padding: 16px;
+            margin: 16px 0;
+            background-color: #242424;
         }
 
-        .step-content {
-            border: 1px solid #333333;
-            border-top: none;
-            padding: 12px;
-            margin-bottom: 16px;
+        .role-title {
+            font-weight: bold;
+            font-size: 13pt;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .role-name {
+            color: #4a9eff;
+            font-weight: bold;
+        }
+
+        .role-content {
+            font-size: 11pt;
             line-height: 1.6;
-            background-color: #1f1f1f;
+            color: #e0e0e0;
         }
 
         .day-card {
@@ -160,13 +159,6 @@
             font-weight: bold;
             margin-top: 40px;
             margin-bottom: 8px;
-            color: #ffffff;
-        }
-
-        .cover-subtitle {
-            font-size: 44pt;
-            font-weight: bold;
-            margin-bottom: 24px;
             color: #ffffff;
         }
 
@@ -237,11 +229,6 @@
             color: #6bb3ff;
         }
 
-        .brand-highlight {
-            font-weight: bold;
-            color: #ffffff;
-        }
-
         strong {
             color: #ffffff;
         }
@@ -253,48 +240,22 @@
             margin: 16px 0;
         }
 
-        .template {
-            background-color: #1f1f1f;
-            border: 1px solid #333333;
-            padding: 16px;
-            margin: 20px 0;
-            font-size: 10pt;
-        }
-
-        .template-row {
-            margin-bottom: 16px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid #333333;
-        }
-
-        .template-row:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-
-        .template-label {
-            color: #888888;
-            font-size: 9pt;
+        .step-box {
+            background-color: #2a2a2a;
+            color: #ffffff;
+            padding: 12px;
+            margin: 12px 0 8px 0;
             font-weight: bold;
-            margin-bottom: 4px;
-        }
-
-        .template-input {
-            color: #e0e0e0;
-            background-color: #242424;
             border: 1px solid #333333;
-            padding: 8px;
-            width: 100%;
-            font-family: Arial, sans-serif;
-            font-size: 10pt;
         }
 
-        .example {
-            color: #888888;
-            font-size: 9pt;
-            font-style: italic;
-            margin-top: 4px;
+        .step-content {
+            border: 1px solid #333333;
+            border-top: none;
+            padding: 12px;
+            margin-bottom: 16px;
+            line-height: 1.6;
+            background-color: #1f1f1f;
         }
     </style>
 </head>
@@ -302,13 +263,13 @@
     <nav>
         <div class="nav-container">
             <a href="#overview">Overview</a>
-            <a href="#brief">Creative Brief</a>
+            <a href="#roles">Roles</a>
             <a href="#workflow">Workflow</a>
-            <a href="#create">Create</a>
-            <a href="#post">Post</a>
-            <a href="#timing">Times</a>
+            <a href="#brief">Creative Brief</a>
+            <a href="#creation">Content Creation</a>
+            <a href="#posting">Posting</a>
             <a href="#asana">Asana</a>
-            <a href="#engagement">Engagement</a>
+            <a href="#reference">Reference</a>
         </div>
     </nav>
 
@@ -328,10 +289,10 @@
 
         <div class="divider"></div>
 
-        <!-- OVERVIEW SECTION -->
+        <!-- OVERVIEW -->
         <div id="overview" class="section">
             <p class="eyebrow">OVERVIEW</p>
-            <p>You create and post all content for <span class="brand-highlight">Alina Mae (ALM)</span> and <span class="brand-highlight">Ambition with Grace (AWG)</span>. This SOP covers the full cycle: receive creative brief → ideate → write → design → approve → schedule → post → engage.</p>
+            <p>This SOP defines how Psalm, Iris, and Kathy work together to create and post content for Alina Mae (ALM) and Ambition with Grace (AWG). Each team member has clear responsibilities in the workflow.</p>
 
             <div class="doc-links">
                 <p>📋 REFERENCE DOCUMENTS</p>
@@ -352,219 +313,238 @@
 
         <div class="divider"></div>
 
-        <!-- CREATIVE BRIEF SECTION -->
-        <div id="brief" class="section">
-            <h1>Weekly</h1>
-            <h2>Creative Brief</h2>
+        <!-- ROLES & RESPONSIBILITIES -->
+        <div id="roles" class="section">
+            <h1>Roles</h1>
+            <h2>& Responsibilities</h2>
 
-            <p class="eyebrow">WHAT IS A CREATIVE BRIEF?</p>
-            <p>A creative brief is your content roadmap for the week. It outlines the themes, angles, hooks, and key messages for all posts across both brands. Use this brief to guide copy writing and image creation. You receive this from your manager every Monday morning.</p>
-
-            <p class="eyebrow" style="margin-top: 20px;">WHAT'S INCLUDED</p>
-            <p><strong>Week of:</strong> Date range | <strong>Brand focus:</strong> ALM / AWG or split | <strong>Overall theme:</strong> Seasonal, campaign, product launch, etc. | <strong>Key angles:</strong> 3–5 content angles to explore | <strong>Hooks/CTAs:</strong> How to draw attention and drive engagement | <strong>Product/topic spotlights:</strong> What to feature | <strong>Post count:</strong> Number of posts per platform</p>
-
-            <p class="eyebrow" style="margin-top: 20px;">EXAMPLE BRIEF</p>
-            <div class="phase">
-                <strong>Week of May 27–June 2</strong><br>
-                <strong>Brand:</strong> ALM (primary) + AWG (1 post)<br>
-                <strong>Theme:</strong> Summer Comfort Campaign<br><br>
-                <strong>Angles:</strong><br>
-                • Comfort as a core value (maternity wear that doesn't sacrifice style)<br>
-                • Real mom testimonials (Reels format)<br>
-                • Style tips for each trimester<br>
-                • Behind-the-scenes design process<br>
-                • User-generated content showcase<br><br>
-                <strong>Hooks:</strong> "Stop sacrificing comfort," "See how real moms style…," "You don't have to choose," "Watch how we made…"<br><br>
-                <strong>Spotlight:</strong> New Summer Collection launch (Fri post)<br><br>
-                <strong>Post count:</strong> ALM: 5 posts (Insta 2x, FB 1x, TikTok 2x) | AWG: 1 post (Insta)
+            <div class="role-card">
+                <div class="role-title">📋 Creative Direction & Strategy</div>
+                <div class="role-name">PSALM (PLA)</div>
+                <div class="role-content">
+                    <p><strong>Responsibilities:</strong></p>
+                    <p>• Creates weekly creative brief with themes, angles, hooks, and post count<br>
+                    • Defines content direction and strategy for both brands<br>
+                    • Reviews all content created by Iris before posting approval<br>
+                    • Approves final content for Kathy to post<br>
+                    • Monitors performance and provides feedback<br>
+                    • Updates strategy based on engagement data</p>
+                </div>
             </div>
 
-            <p class="eyebrow" style="margin-top: 20px;">CREATIVE BRIEF TEMPLATE</p>
-            <p>Fill this out each Monday when you receive the brief from your manager. Save to Asana or shared folder for reference throughout the week.</p>
-
-            <div class="template">
-                <div class="template-row">
-                    <div class="template-label">WEEK OF (Date Range)</div>
-                    <input type="text" class="template-input" placeholder="e.g., May 27 – June 2">
+            <div class="role-card">
+                <div class="role-title">🎨 Content Creation</div>
+                <div class="role-name">IRIS</div>
+                <div class="role-content">
+                    <p><strong>Responsibilities:</strong></p>
+                    <p>• Receives creative brief from Psalm<br>
+                    • Creates all copy (captions, hooks, CTAs)<br>
+                    • Sources or creates all visual assets (static images, videos, graphics)<br>
+                    • Ensures content aligns with brand voice and aesthetic per Cheat Sheet<br>
+                    • Uploads content to Asana tasks for review<br>
+                    • Makes revisions based on Psalm's feedback</p>
                 </div>
+            </div>
 
-                <div class="template-row">
-                    <div class="template-label">PRIMARY BRAND FOCUS</div>
-                    <input type="text" class="template-input" placeholder="ALM / AWG / Both">
-                </div>
-
-                <div class="template-row">
-                    <div class="template-label">OVERALL THEME</div>
-                    <input type="text" class="template-input" placeholder="e.g., Summer Campaign, New Product Launch, Seasonal">
-                    <div class="example">One sentence describing the week's content direction</div>
-                </div>
-
-                <div class="template-row">
-                    <div class="template-label">KEY ANGLES (3–5)</div>
-                    <textarea class="template-input" rows="5" placeholder="Angle 1: &#10;Angle 2: &#10;Angle 3: &#10;Angle 4: &#10;Angle 5: "></textarea>
-                    <div class="example">Different content perspectives or storytelling approaches</div>
-                </div>
-
-                <div class="template-row">
-                    <div class="template-label">HOOKS & CALLS-TO-ACTION</div>
-                    <textarea class="template-input" rows="4" placeholder="Hook 1: &#10;Hook 2: &#10;Hook 3: "></textarea>
-                    <div class="example">Opening lines to grab attention. Examples: "Stop waiting…", "Here's how…", "You don't have to…"</div>
-                </div>
-
-                <div class="template-row">
-                    <div class="template-label">PRODUCT / TOPIC SPOTLIGHT</div>
-                    <input type="text" class="template-input" placeholder="What to feature this week">
-                    <div class="example">Specific product, collection, or topic to emphasize</div>
-                </div>
-
-                <div class="template-row">
-                    <div class="template-label">CONTENT REQUIREMENTS</div>
-                    <textarea class="template-input" rows="3" placeholder="Any specific formats, features, or requirements?&#10;e.g., Use Reels, feature customer stories, include testimonials"></textarea>
-                </div>
-
-                <div class="template-row">
-                    <div class="template-label">POST COUNT & PLATFORMS</div>
-                    <textarea class="template-input" rows="3" placeholder="ALM: __ Instagram, __ Facebook, __ TikTok&#10;AWG: __ Instagram, __ Facebook, __ TikTok"></textarea>
-                    <div class="example">Total posts per brand and platform for the week</div>
-                </div>
-
-                <div class="template-row">
-                    <div class="template-label">NOTES / SPECIAL INSTRUCTIONS</div>
-                    <textarea class="template-input" rows="3" placeholder="Any additional guidelines or reminders"></textarea>
+            <div class="role-card">
+                <div class="role-title">📱 Posting & Scheduling</div>
+                <div class="role-name">KATHY</div>
+                <div class="role-content">
+                    <p><strong>Responsibilities:</strong></p>
+                    <p>• Receives approved content from Psalm<br>
+                    • Posts and schedules content using Meta Business Suite (Instagram/Facebook) and TikTok Creator Studio<br>
+                    • Follows exact posting times per platform<br>
+                    • Monitors comments and messages on all platforms<br>
+                    • Responds to engagement per brand voice guidelines<br>
+                    • Collects 24-hour metrics on all posts<br>
+                    • Compiles weekly performance report for Psalm</p>
                 </div>
             </div>
         </div>
 
         <div class="divider"></div>
 
-        <!-- WEEKLY WORKFLOW -->
+        <!-- WORKFLOW -->
         <div id="workflow" class="section">
             <h1>Weekly</h1>
-            <h2>Cycle</h2>
+            <h2>Workflow</h2>
 
             <div class="day-card">
-                <div class="day-title">MONDAY · RECEIVE BRIEF & PLAN</div>
+                <div class="day-title">MONDAY · PSALM CREATES BRIEF</div>
                 <div class="day-content">
-                    <p>Receive creative brief from manager. Fill out the Creative Brief Template above. Review content calendar for both brands. Break down brief into individual posts. Create Asana tasks for all content. Set deadlines: copy due Wed, images due Thu, approval by Thu 5 PM.</p>
+                    <p>Psalm creates creative brief for the week covering both brands. Brief includes: theme, 3–5 angles, hooks/CTAs, product spotlights, post count by platform. Brief is shared with Iris in Asana by 10 AM.</p>
                 </div>
             </div>
 
             <div class="day-card">
-                <div class="day-title">TUESDAY–WEDNESDAY · CREATE COPY</div>
+                <div class="day-title">TUESDAY–THURSDAY · IRIS CREATES CONTENT</div>
                 <div class="day-content">
-                    <p>Write captions using angles and hooks from the brief. Reference brand voice in Cheat Sheet. Captions ready for approval by Wednesday close of business. Move Asana tasks to "Ready for Approval."</p>
+                    <p>Iris receives brief and creates all content. Writes copy using brief angles. Sources/creates images. Uploads to Asana tasks by Thursday 5 PM with all copy and assets attached. Reference Cheat Sheet for brand voice and visual guidelines.</p>
                 </div>
             </div>
 
             <div class="day-card">
-                <div class="day-title">THURSDAY · CREATE IMAGES & SUBMIT</div>
+                <div class="day-title">THURSDAY EVENING · PSALM REVIEWS & APPROVES</div>
                 <div class="day-content">
-                    <p>Source or create images per brief specs. Verify they match brand aesthetic. Attach to Asana tasks. All content ready for approval by 5 PM Thursday.</p>
+                    <p>Psalm reviews all content in Asana. If approved, moves tasks to "Ready to Post." If revisions needed, adds comments and moves back to "In Progress" for Iris to revise Friday morning.</p>
                 </div>
             </div>
 
             <div class="day-card">
-                <div class="day-title">THURSDAY EVENING · APPROVAL</div>
+                <div class="day-title">FRIDAY–NEXT WEDNESDAY · KATHY POSTS & SCHEDULES</div>
                 <div class="day-content">
-                    <p>Manager reviews and approves. If revisions needed, you make changes Friday morning. Once approved, posts move to "Ready to Post."</p>
+                    <p>Kathy receives "Ready to Post" tasks. Posts and schedules content using Meta Business Suite (Instagram/Facebook) and TikTok Creator Studio at recommended times. Updates Asana with post URLs and scheduling confirmation.</p>
                 </div>
             </div>
 
             <div class="day-card">
-                <div class="day-title">FRIDAY–NEXT WEEK · SCHEDULE & POST</div>
+                <div class="day-title">DAILY · KATHY MONITORS ENGAGEMENT</div>
                 <div class="day-content">
-                    <p>Schedule approved posts using Meta Business Suite (Instagram/Facebook) or TikTok Creator Studio. Posts go live Fri–Wed per Posting Times table. Monitor engagement daily.</p>
+                    <p>Kathy monitors all platforms for comments and messages. Responds per brand voice guidelines (see Cheat Sheet). Flags issues or unusual activity for Psalm.</p>
                 </div>
             </div>
 
             <div class="day-card">
-                <div class="day-title">FRIDAY · REPORT & MONITOR</div>
+                <div class="day-title">FRIDAY · KATHY REPORTS TO PSALM</div>
                 <div class="day-content">
-                    <p>Check metrics on all live posts. Respond to comments. Compile weekly summary and share with manager by 5 PM.</p>
+                    <p>Kathy compiles weekly report by 5 PM: posts published (by platform), total engagement (likes + comments + shares by platform), top post, follower growth. Shares in Asana and tags Psalm.</p>
                 </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- CREATIVE BRIEF SECTION -->
+        <div id="brief" class="section">
+            <h1>Creative</h1>
+            <h2>Brief (Psalm)</h2>
+
+            <p class="eyebrow">WHAT PSALM CREATES</p>
+            <p>Every Monday morning, Psalm creates a creative brief that guides Iris's content creation for the week. The brief is the roadmap for all social media content.</p>
+
+            <p class="eyebrow" style="margin-top: 20px;">BRIEF TEMPLATE</p>
+            <div class="phase">
+                <strong>Week of:</strong> [Date range]<br>
+                <strong>Brands:</strong> ALM / AWG / Both<br>
+                <strong>Overall theme:</strong> [Campaign, seasonal, product, etc.]<br><br>
+                <strong>KEY ANGLES (3–5):</strong><br>
+                • Angle 1<br>
+                • Angle 2<br>
+                • Angle 3<br><br>
+                <strong>HOOKS & CTAs:</strong><br>
+                • Hook 1<br>
+                • Hook 2<br>
+                • Hook 3<br><br>
+                <strong>Product/Topic spotlight:</strong> [What to feature]<br>
+                <strong>Visual direction:</strong> [Style, mood, format notes]<br><br>
+                <strong>POST COUNT:</strong><br>
+                ALM: __ Instagram, __ Facebook, __ TikTok<br>
+                AWG: __ Instagram, __ Facebook, __ TikTok<br><br>
+                <strong>Special instructions:</strong> [Any platform-specific notes, deadlines, constraints]
+            </div>
+
+            <p class="eyebrow" style="margin-top: 20px;">EXAMPLE</p>
+            <div class="phase">
+                <strong>Week of May 27–June 2</strong><br>
+                <strong>Brands:</strong> ALM (primary) + AWG (1 post)<br>
+                <strong>Theme:</strong> Summer Comfort Campaign<br><br>
+                <strong>Angles:</strong><br>
+                • Comfort without sacrifice (maternity style)<br>
+                • Real testimonials from moms<br>
+                • Styling tips per trimester<br>
+                • Behind-the-scenes design<br><br>
+                <strong>Hooks:</strong> "Stop sacrificing comfort," "See how real moms…," "You don't have to choose"<br><br>
+                <strong>Spotlight:</strong> New Summer Collection (launch Friday)<br><br>
+                <strong>Visual:</strong> Warm, aspirational, lifestyle focus<br><br>
+                <strong>Post count:</strong> ALM: 2 Insta, 1 FB, 2 TT | AWG: 1 Insta
             </div>
         </div>
 
         <div class="divider"></div>
 
         <!-- CONTENT CREATION -->
-        <div id="create" class="section">
+        <div id="creation" class="section">
             <h1>Content</h1>
-            <h2>Creation</h2>
+            <h2>Creation (Iris)</h2>
 
-            <p class="eyebrow">COPY WRITING</p>
-            <p>Use the creative brief's angles and hooks as your starting point. Open the relevant Cheat Sheet (ALM or AWG). Follow brand voice guidelines. Keep captions concise but engaging. Use approved hashtags only. Check grammar and tone. Save draft in Asana task description.</p>
+            <p class="eyebrow">IRIS RECEIVES BRIEF & CREATES</p>
+            <p>Iris receives Psalm's brief Monday morning and begins creating all content. Use the brief's angles and hooks to guide copy writing and visual creation.</p>
 
-            <div class="phase">
-                <strong>ALM tone:</strong> [Reference your Cheat Sheet]<br>
-                <strong>AWG tone:</strong> [Reference your Cheat Sheet]<br>
-                <strong>Instagram:</strong> Up to 2,200 characters, hashtags end of caption or first comment | <strong>Facebook:</strong> 1,300 characters recommended | <strong>TikTok:</strong> 150 characters, hashtags critical
+            <div class="step-box">STEP 1: REVIEW BRIEF & BRAND GUIDELINES</div>
+            <div class="step-content">
+                <p>Read Psalm's creative brief. Open the relevant Cheat Sheet (ALM or AWG). Familiarize yourself with brand voice, visual style, hashtags, and platform requirements.</p>
             </div>
 
-            <p class="eyebrow" style="margin-top: 20px;">IMAGE SOURCING & CREATION</p>
-            <p>Use the brief's visual direction. Check Cheat Sheet for brand aesthetics. Use existing brand assets (Figma, Canva, photo library) or create new. Tools: Canva (templates), Figma (brand designs), stock photos, or original photography.</p>
-
-            <div class="phase">
-                <strong>Image specs:</strong><br>
-                Instagram Feed: 1080×1350px | Instagram Stories: 1080×1920px<br>
-                Facebook: 1200×628px minimum | TikTok: 1080×1920px vertical<br>
-                File format: PNG or JPG | Brand colors/fonts only | No filters outside brand aesthetic
+            <div class="step-box">STEP 2: WRITE COPY</div>
+            <div class="step-content">
+                <p>Write captions using the brief's angles and hooks. Follow brand voice from Cheat Sheet. Keep copy concise but engaging. Include CTAs. Use approved hashtags only.</p>
+                <p><strong>Character limits:</strong> Instagram 2,200 chars | Facebook 1,300 chars | TikTok 150 chars</p>
             </div>
 
-            <p class="eyebrow" style="margin-top: 20px;">ASANA TASK SETUP (CREATION PHASE)</p>
-            <p><strong>Title:</strong> [BRAND] [DATE] [PLATFORM] — Example: "ALM 05.27 Instagram Post"<br>
-            <strong>Description:</strong> Creative brief angle used | Caption copy | Image link/attachment | Hashtags<br>
-            <strong>Due:</strong> Thursday 5 PM (approval deadline)<br>
-            <strong>Status:</strong> Start as "In Progress" → Move to "Ready for Approval" when copy + image complete</p>
+            <div class="step-box">STEP 3: CREATE/SOURCE IMAGES</div>
+            <div class="step-content">
+                <p>Create or source images aligned to brief's visual direction. Use Canva, Figma, stock photos, or original assets. Follow brand specs from Cheat Sheet.</p>
+                <p><strong>Image specs:</strong> Instagram 1080×1350px | Facebook 1200×628px | TikTok 1080×1920px (vertical)</p>
+            </div>
+
+            <div class="step-box">STEP 4: CREATE ASANA TASK</div>
+            <div class="step-content">
+                <p><strong>Title:</strong> [BRAND] [DATE] [PLATFORM] — Example: "ALM 05.27 Instagram Post"<br>
+                <strong>Description:</strong> Brief angle used | Copy | Images attached | Hashtags<br>
+                <strong>Due:</strong> Thursday 5 PM<br>
+                <strong>Status:</strong> Move to "Ready for Approval" when complete</p>
+            </div>
+
+            <div class="step-box">STEP 5: REVISE IF NEEDED</div>
+            <div class="step-content">
+                <p>If Psalm requests revisions Thursday evening, update content Friday morning and move task back to "Ready for Approval."</p>
+            </div>
         </div>
 
         <div class="divider"></div>
 
         <!-- POSTING WORKFLOW -->
-        <div id="post" class="section">
+        <div id="posting" class="section">
             <h1>Posting</h1>
-            <h2>Process</h2>
+            <h2>& Scheduling (Kathy)</h2>
 
-            <div class="step-box">1. WAIT FOR APPROVAL</div>
+            <p class="eyebrow">KATHY POSTS APPROVED CONTENT</p>
+            <p>Kathy receives "Ready to Post" tasks from Psalm and schedules/posts content on all platforms.</p>
+
+            <div class="step-box">STEP 1: CHECK ASANA</div>
             <div class="step-content">
-                <p>Task must be "Ready to Post" in Asana before proceeding. If revisions needed, manager will add comments.</p>
+                <p>Review Asana for "Ready to Post" tasks. Grab the post time, platform, copy, and images.</p>
             </div>
 
-            <div class="step-box">2. OPEN PLATFORM</div>
+            <div class="step-box">STEP 2: OPEN PLATFORM</div>
             <div class="step-content">
-                <p>Log into brand account: Meta Business Suite (Instagram/Facebook) or TikTok Creator Studio.</p>
+                <p><strong>Instagram/Facebook:</strong> Meta Business Suite (business.facebook.com)<br>
+                <strong>TikTok:</strong> TikTok Creator Studio (studio.tiktok.com)</p>
             </div>
 
-            <div class="step-box">3. PASTE & UPLOAD</div>
+            <div class="step-box">STEP 3: CREATE POST</div>
             <div class="step-content">
-                <p>Create new post. Paste caption exactly as written. Upload image(s). Check preview for cropping/quality.</p>
+                <p>Create new post. Paste caption exactly. Upload images. Check preview for quality and cropping.</p>
             </div>
 
-            <div class="step-box">4. SCHEDULE</div>
+            <div class="step-box">STEP 4: SCHEDULE</div>
             <div class="step-content">
-                <p>Select "Schedule" (never "Post Now" unless same-day emergency). Use time from Posting Times table. Confirm scheduling window (TikTok: 10 days max, Facebook: 6 months max).</p>
+                <p>Select "Schedule" (never "Post Now"). Use posting time from table below. Confirm scheduling window (TikTok: 10 days max, Facebook: 6 months max, Instagram: 1–3 days).</p>
             </div>
 
-            <div class="step-box">5. LOG & COMPLETE</div>
+            <div class="step-box">STEP 5: LOG IN ASANA</div>
             <div class="step-content">
-                <p>Return to Asana. Mark task "Complete." Add comment: "Scheduled [Platform] [Date] [Time]." Include post URL once live (add next day).</p>
+                <p>Return to Asana. Mark task "Complete." Add comment: "Scheduled [Platform] [Time]." Add post URL once live.</p>
             </div>
-        </div>
 
-        <div class="divider"></div>
-
-        <!-- POSTING TIMES -->
-        <div id="timing" class="section">
-            <h1>Posting</h1>
-            <h2>Times</h2>
-
+            <p class="eyebrow" style="margin-top: 20px;">POSTING TIMES</p>
             <table>
                 <thead>
                     <tr>
                         <th>Platform</th>
                         <th>Weekday</th>
                         <th>Weekend</th>
-                        <th>Target Frequency</th>
+                        <th>Frequency</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -589,99 +569,112 @@
                 </tbody>
             </table>
 
-            <p class="eyebrow" style="margin-top: 20px;">SCHEDULING RULES</p>
-            <p><strong>TikTok:</strong> Maximum 10 days in advance. For posts further out, schedule manually when within 10-day window.<br>
-            <strong>Facebook:</strong> Up to 6 months in advance. Queue posts in order.<br>
-            <strong>Instagram:</strong> Recommend scheduling 1–3 days ahead via Meta Business Suite.</p>
+            <p class="eyebrow" style="margin-top: 20px;">ENGAGEMENT & MONITORING</p>
+            <p>Monitor all platforms daily for comments and messages. Respond per brand voice (see Cheat Sheet). After 24 hours, log metrics to Asana: likes, comments, shares, follower gain.</p>
+
+            <p class="eyebrow" style="margin-top: 20px;">WEEKLY REPORT (FRIDAY 5 PM)</p>
+            <p><strong>Post summary:</strong> Total posts by platform<br>
+            <strong>Engagement:</strong> Combined likes + comments + shares by platform<br>
+            <strong>Top post:</strong> Highest engagement<br>
+            <strong>Growth:</strong> Week-over-week follower change<br>
+            <strong>Notes:</strong> Anything unusual or notable<br><br>
+            Share in Asana comment and tag Psalm.</p>
         </div>
 
         <div class="divider"></div>
 
-        <!-- ASANA MANAGEMENT -->
+        <!-- ASANA SETUP -->
         <div id="asana" class="section">
             <h1>Asana</h1>
-            <h2>Task Flow</h2>
+            <h2>Task Management</h2>
 
-            <p class="eyebrow">CUSTOM FIELDS (ADD TO EACH TASK)</p>
+            <p class="eyebrow">TASK STRUCTURE</p>
+            <p><strong>Title:</strong> [BRAND] [DATE] [PLATFORM] — "ALM 05.27 Instagram Post"<br>
+            <strong>Assignee:</strong> Iris (creation phase) → Kathy (posting phase)<br>
+            <strong>Due:</strong> Thursday 5 PM (creation deadline)<br>
+            <strong>Custom fields:</strong> Brand (ALM/AWG) | Platform (Instagram/Facebook/TikTok) | Post URL | 24h Engagement</p>
+
+            <p class="eyebrow" style="margin-top: 20px;">STATUS FLOW</p>
+            <div class="phase">
+                <strong>Not Started</strong> (Iris) → Writing copy, sourcing images<br>
+                ↓<br>
+                <strong>In Progress</strong> (Iris) → Copy written, images selected<br>
+                ↓<br>
+                <strong>Ready for Approval</strong> (Iris) → All content ready, Psalm reviews Thu evening<br>
+                ↓<br>
+                <strong>Ready to Post</strong> (Psalm approves) → Kathy schedules & posts<br>
+                ↓<br>
+                <strong>Complete</strong> (Kathy) → Posted + metrics logged
+            </div>
+
+            <p class="eyebrow" style="margin-top: 20px;">IF REVISIONS NEEDED</p>
+            <p>Psalm moves task back to "In Progress" with comments. Iris revises Friday morning and moves back to "Ready for Approval."</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- REFERENCE -->
+        <div id="reference" class="section">
+            <h1>Quick</h1>
+            <h2>Reference</h2>
+
+            <p class="eyebrow">WHO DOES WHAT</p>
             <table>
                 <thead>
                     <tr>
-                        <th>Field</th>
-                        <th>Options/Info</th>
+                        <th>Task</th>
+                        <th>Owner</th>
+                        <th>When</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Brand</strong></td>
-                        <td>ALM / AWG</td>
+                        <td>Create creative brief</td>
+                        <td>Psalm</td>
+                        <td>Monday 10 AM</td>
                     </tr>
                     <tr>
-                        <td><strong>Platform</strong></td>
-                        <td>Instagram / Facebook / TikTok</td>
+                        <td>Write copy & create images</td>
+                        <td>Iris</td>
+                        <td>Tue–Thu 5 PM</td>
                     </tr>
                     <tr>
-                        <td><strong>Post Date</strong></td>
-                        <td>When it goes live</td>
+                        <td>Review & approve content</td>
+                        <td>Psalm</td>
+                        <td>Thu evening</td>
                     </tr>
                     <tr>
-                        <td><strong>Post URL</strong></td>
-                        <td>Add after post is live</td>
+                        <td>Post & schedule</td>
+                        <td>Kathy</td>
+                        <td>Fri–Wed per timing</td>
                     </tr>
                     <tr>
-                        <td><strong>Engagement (24h)</strong></td>
-                        <td>Likes + Comments + Shares</td>
+                        <td>Monitor engagement</td>
+                        <td>Kathy</td>
+                        <td>Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Compile weekly report</td>
+                        <td>Kathy</td>
+                        <td>Friday 5 PM</td>
                     </tr>
                 </tbody>
             </table>
 
-            <p class="eyebrow" style="margin-top: 20px;">TASK STATUS FLOW</p>
-            <div class="phase">
-                <strong>Not Started</strong> → Draft copy, source images<br>
-                ↓<br>
-                <strong>In Progress</strong> → Copy ready, images attached<br>
-                ↓<br>
-                <strong>Ready for Approval</strong> → Manager reviews (Thu 5 PM deadline)<br>
-                ↓<br>
-                <strong>Ready to Post</strong> → Approved, you schedule on platform<br>
-                ↓<br>
-                <strong>Complete</strong> → Posted, metrics logged
-            </div>
-
-            <p class="eyebrow" style="margin-top: 20px;">IF REVISIONS NEEDED</p>
-            <p>Manager moves task back to "In Progress" with comments. You make changes and move back to "Ready for Approval."</p>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- ENGAGEMENT & PERFORMANCE -->
-        <div id="engagement" class="section">
-            <h1>Engagement</h1>
-            <h2>& Reporting</h2>
-
-            <p class="eyebrow">DAILY MONITORING</p>
-            <p>Check all live posts daily. Respond to comments and messages per brand voice (see Cheat Sheet). Flag spam. Report issues immediately.</p>
-
-            <p class="eyebrow" style="margin-top: 20px;">24-HOUR METRICS</p>
-            <p>After each post is live 24+ hours, add to Asana task comment:</p>
-            <div class="phase">
-                Likes: [#]<br>
-                Comments: [#]<br>
-                Shares: [#]<br>
-                Follower gain: [+#]
-            </div>
-
-            <p class="eyebrow" style="margin-top: 20px;">WEEKLY REPORT (FRIDAY 5 PM)</p>
-            <p><strong>Post summary:</strong> Total posts published this week (by platform)<br>
-            <strong>Engagement total:</strong> Combined likes + comments + shares (by platform)<br>
-            <strong>Top post:</strong> Highest engagement (platform + title)<br>
-            <strong>Growth:</strong> Follower count change week-over-week<br>
-            <strong>Notes:</strong> Anything unusual or notable<br><br>
-            Share in Asana comment and tag manager.</p>
+            <p class="eyebrow" style="margin-top: 20px;">BRAND VOICE & GUIDELINES</p>
+            <p>Always reference the appropriate Cheat Sheet:<br>
+            • <strong>Alina Mae (ALM):</strong> [See ALM Cheat Sheet]<br>
+            • <strong>Ambition with Grace (AWG):</strong> [See AWG Cheat Sheet]</p>
 
             <p class="eyebrow" style="margin-top: 20px;">TROUBLESHOOTING</p>
-            <p><strong>Image crops wrong?</strong> Check specs above. Try larger source file. <strong>Caption too long?</strong> Edit before posting—platform has character limits. <strong>Won't schedule?</strong> Check TikTok 10-day max or all fields filled. <strong>Questions?</strong> Tag manager in Asana task.</p>
+            <p><strong>Iris:</strong> Questions about brief? Ask Psalm in Asana. Need brand guidance? Check Cheat Sheet.<br>
+            <strong>Kathy:</strong> Post won't schedule? Check platform limits (TikTok 10 days, Facebook 6 months). Image crops wrong? Check specs in content creation section.<br>
+            <strong>All:</strong> Tag appropriate person in Asana task comment for questions.</p>
         </div>
 
         <div class="divider" style="margin-top: 80px;"></div>
 
-        <p style="text-align: center; color: #666666; font-size: 9pt; margin-top: 40px;">Social Media SOP: Create & Post · 202
+        <p style="text-align: center; color: #666666; font-size: 9pt; margin-top: 40px;">Social Media SOP: Create & Post · 2026 · Created by Psalm Alfafara · Alina Mae (ALM) & Ambition with Grace (AWG)</p>
+    </div>
+</body>
+</html>
